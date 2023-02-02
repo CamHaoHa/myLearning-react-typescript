@@ -8,6 +8,8 @@ In the project directory, you can run:
 
 ### Different branch has different learning subject
 
+### Project Setting 
+npm i --save-exact react-redux redux @types/react-redux redux-thunk@2.3.0 axios@0.21.1
 
 ### `npm start`
 

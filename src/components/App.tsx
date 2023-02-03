@@ -11,3 +11,4 @@ const App = () => {
   </div>
   </Provider>
 }
+export default App

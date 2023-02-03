@@ -14,7 +14,7 @@ npm i --save-exact react-redux redux @types/react-redux redux-thunk@2.3.0 axios@
 ### Branch typescript-redux
 ## Redux Store Design
 
-![react-redux flow](https://github.com/CamHaoHa/myLearning-react-typescript/typeScript-redux/react-redux.drawio.png?raw=true)
+![react-redux flow](https://github.com/CamHaoHa/myLearning-react-typescript/blob/typeScript-redux/public/react-redux.drawio.png?raw=true)
 
 Searching npm : 
 ### `npm start`

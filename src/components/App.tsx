@@ -6,7 +6,7 @@ import RepositoriesList from './RepositoriesList'
 const App = () => {
   return <Provider store = {store}>
   <div>
-  <h1> Serach For a package</h1>
+  <h1> Serach For a NPM package</h1>
   <RepositoriesList />
   </div>
   </Provider>

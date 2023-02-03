@@ -1,10 +1,13 @@
 import{useState} from 'react'
 import { useActions } from '../hooks/useAction'
+import { useTypedSelector } from '../hooks/useTypeSelector'
 type Props = {}
 
 const RepositoriesList:React.FC = () => {
   const [term, setTerm] = useState('')
   const {searchRepositores} = useActions()
+  const {data, error, loading}= useTypedSelector((state) =>state.repositories)
+  
 
   const onSubmit = (e:React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -19,6 +22,9 @@ const RepositoriesList:React.FC = () => {
         <button
         > Search</button>
       </form>
+      {error && <h3>{error}</h3>}
+      {loading && <h3>Loading...</h3>}
+      {!error && !loading && data .map((name) => <div>{name}</div>)}
     </div>
   )
 }

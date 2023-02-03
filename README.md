@@ -15,8 +15,8 @@ npm i --save-exact react-redux redux @types/react-redux redux-thunk@2.3.0 axios@
 ## Redux Store Design
 
 ```mermaid
-graph TD;
-  ActionCreator--> Creator;
+classDiagram;
+  ActionCreator --|> Actions;
 
 ```
 

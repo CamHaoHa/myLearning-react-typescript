@@ -1,4 +1,4 @@
-import {ActionType} from '../actions'
+import {ActionType} from '../actionTypes'
 interface SearchRepositoriesAction{
   type: ActionType.SEARCH_REPOSITORIES,
 }
@@ -9,7 +9,7 @@ interface SearchRepositoriesSuccessAction {
 }
 
 interface SearchRepositoriesErrorAction {
-  type: ActionType.SEARCH_REPOSITORIES_SUCCESS_ERROR,
+  type: ActionType.SEARCH_REPOSITORIES_ERROR,
   payload:string 
 } 
 
